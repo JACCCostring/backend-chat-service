@@ -114,6 +114,8 @@ var io = socket(server);
 //setting events on socket
 io.on('connection', (socket) =>{
     console.log(`new connection from ${socket.id}`);
+    //emit to all the clients that there is a new connection 
+    io.sockets.emit('chat', {id:'', user:'',msg:'welcome to the chat '+socket.id})
     //handle socket
     socket.on('chat', (data) =>{
         // pushing new chat obj to array
@@ -123,5 +125,9 @@ io.on('connection', (socket) =>{
             msg: data.msg
         });
         io.sockets.emit('chat', data);
+    })
+    //handle socket when typing is emitted
+    socket.on('typing', (value) =>{
+        io.sockets.emit('typing', value);
     })
 });

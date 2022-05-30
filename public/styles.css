@@ -1,20 +1,26 @@
+body{
+    background-color: #222;
+}
+
 .container{
-    margin: 5%;
+    /* margin: 5%; */
+    width: 100%;
 }
 
 #text-area{
     display: block;
-    max-width: 50%;
-    border-style: solid;
+    /* max-width: 50%; */
+    /* border-style: solid;
     border-radius: 10px;
     border-width: 1px;
-    background-color: whitesmoke;
-    opacity: 0.5;
+    border-color: rgb(52, 194, 194);; */
+    background-color: transparent;
+    /* opacity: 0.5; */
     padding-bottom: 0px;
     margin-bottom: 5px;
     padding: 5px;
-    height: 300px;
-    width: 450px;
+    height: 500px;
+    /* width: 450px; */
     /* make it scrollable */
     /* overflow: hidden; */
     overflow-y: scroll;
@@ -22,12 +28,14 @@
 }
 
 strong{
-    color: blueviolet;
+    color: #f3f1f1;
 }
 
 p{
-    background-color: antiquewhite;
+    /* background-color: #f2f2f2; */
+    color: aqua;
     border-radius: 25px;
+    opacity: 0.5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -36,10 +44,11 @@ p{
 }
 
 #btn-send{
-    width: 50%;
+    width: 100%;
     background-color: rgb(52, 194, 194);
     border-style: solid;
-    border-radius: 25px;
+    border-radius: 10px;
+    border-color: rgb(52, 194, 194);;
     height: 30px;
 }
 
@@ -48,8 +57,35 @@ p{
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    border-color: rgb(52, 194, 194);;
     margin-bottom: 5px;
     height: 30px;
-    width: 50%;
+    width: 100%;
     font-size: large;
+    color: aqua;
+    background-color: transparent;
+}
+
+#text-user{
+    width: 30%;
+}
+
+hr{
+    opacity: 0.1;
+    border: rgb(52, 194, 194);;
+}
+
+h6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    color: aqua;
+    margin-top: 0px;
+    text-align: center;
+    opacity: 0.5;
+}
+/* //making div for who is typing tag inline */
+#feed{
+    display: inline;
+    margin-left: 35%;
+    color: aqua;
 }
